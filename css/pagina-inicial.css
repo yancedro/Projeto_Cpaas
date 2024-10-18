@@ -1,0 +1,498 @@
+/* Gerais */
+body{
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.row{
+    margin: 0;
+}
+
+.container{
+    padding: 70px 0px;
+}
+
+p,li{
+    color: #444;
+    font-size: 14px;
+}
+
+/* Barra de Navegação*/
+header,.navbar {
+    background-color: #353D41;
+}
+
+#nav-container{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#logo{
+    width: 75px;
+}
+
+.navbar-brand{
+    padding: 0;
+    color: #fff;
+}
+
+.navbar-brand:hover{
+    color: #fff;
+}
+
+#navbar-links a {
+    color: #FFF;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 1rem .8rem;
+}
+
+/*SLider*/
+.container-fluid{
+    padding: 0;
+}
+
+#mainSlider .carousel-inner, #mainSlider .carousel-item {
+    height: 90vh;
+
+}
+
+#mainSlider .carousel-caption {
+    top: 30%;
+}
+
+#mainSlider .carousel-caption h2{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+#mainSlider .carousel-caption p{
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 100px;
+    color: #FFF;
+}
+
+.main-btn{
+    background-color: #65DAF9;
+    color: #FFF;
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid transparent;
+    transition: .5s;
+}
+
+.main-btn:hover{
+    text-decoration: none;
+    color: #FFF;
+    background-color: transparent;
+    border-color: #65DAF9;
+}
+
+.carousel-indicators .active{
+    background-color: #65DAF9;
+}
+
+
+/* Sobre a empresa*/
+
+#about-area{
+    background-color: #F9F9F9;
+}
+
+.main-title{
+    color: #444;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.main-title::after{
+    content: "";
+    border-top: 2px solid #333;
+    width: 15%;
+    position: absolute;
+    top: 60px;
+    left: 42.5%;
+}
+
+.about-title{
+    font-size: 17px;
+    color: #444;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#about-list{
+    list-style: none;
+    padding-left: 0;
+}
+
+#about-list i{
+    color: #65DAF9;
+    line-height: 25px;
+    margin-right: 15px;
+}
+
+
+/*Serviços*/
+
+.row-cols-auto {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.row-cols-auto img, .row-cols-auto h4, .row-cols-auto i {
+    transition: .5s;
+}
+
+.row-cols-auto img{
+    height: 70%;
+}
+
+
+.row-cols-auto h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#link{
+    cursor: pointer;
+}
+
+.row-cols-auto:hover > h4{
+    color: #65DAF9;
+}
+
+/*2FA - Número Mascara*/
+.fasobre p{
+    font-size: 20px;
+    padding: 0;
+}
+
+.fasobre img{
+    height: 40%;
+    position: absolute;
+    right: 5%;
+    margin-top: -240px;
+    border-radius: 40px 0;
+    
+}
+
+#fa{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+.lista li {
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.lista {
+    margin-left: -25px;
+}
+.strongblue{
+    color: #65DAF9;
+    font-size: 50px;
+}
+
+.lista2 li{
+    list-style:none;
+    font-size: 20px;
+    padding-bottom: 15px;
+}
+
+.lista2 {
+    display: inline;
+}
+
+.lista3 li{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+.col a {
+    color: #333;
+}
+
+.col i{
+    font-size: 100px;
+}
+
+.col:hover > i{
+    color: #65DAF9;
+}
+
+
+.servavançado img{
+    height: 40%;
+    position: absolute;
+    right: 10%;
+    margin-top: -230px;
+}
+
+.servavançado p {
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.verifield p, .sms p{
+    font-size: 25px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.verifield img{
+    height: 40%;
+    position: absolute;
+    right: 10%;
+    margin-top: -300px;
+}
+
+
+#icones3 p {
+    font-size: 25px;
+    padding-top: 40px;
+}
+
+.p-3 img {
+    height: 30%;
+   
+
+}
+
+.sms img{
+    height: 50%;
+    position: absolute;
+    right: 10%;
+    margin-top: -34%;
+}
+
+.sms h2{
+    padding-bottom: 30px;
+}
+
+#h4sms {
+    font-size: 40px;
+}
+
+
+/*footer*/
+
+#contact-area {
+    text-align: center;
+}
+
+.contact-box {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #3ec1d5;
+}
+
+.contact-box i {
+    color: #444;
+    border: solid #444;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    font-size: 16px;
+
+}
+
+.contact-title {
+    font-weight: bold;
+    color: #3dc1d5;
+}
+
+
+/* responsive */
+@media(max-width: 768px) {
+  
+    /* geral */
+    .container {
+      padding: 20px 0;
+    }
+    
+    /* slider */
+    #mainSlider .carousel-inner, #mainSlider .carousel-item {
+      height: auto;
+    }
+  
+    #mainSlider .carousel-caption h2 {
+      font-size: 28px;
+    }
+  
+    #mainSlider .carousel-caption p {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  
+    .carousel-caption {
+      left: 10%;
+      right: 10%;
+    }
+    
+    /* about */
+    #about-area img {
+      margin-top: 100px;
+    }
+    
+    /* data */
+    .circle-box div {
+      padding: 0 10px;
+    }
+  
+    #data-area p {
+      font-size: 16px;
+    }
+    
+    /* team */
+    .card-title {
+      font-size: 14px;
+    }
+  
+    .card-text {
+      font-size: 12px;
+    }
+  
+    /* apply */
+    #apply-area .apply-box {
+      padding: 50px 25px;
+    }
+  
+    /* news */
+    #news-area p {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    #email-input {
+      width: 70%;
+    }
+  
+    #call-area {
+      margin-top: 30px;
+    }
+  
+    #call-area .container {
+      padding: 30px;
+    }
+  
+    #call-area p, #call-area #call-btn {
+      font-size: 16px;
+    }
+  
+  }
+  
+  
+  @media screen and  (max-width: 425px) {
+  
+    /* slider */
+    #mainSlider {
+      margin-top: 90px;
+    }
+  
+    #mainSlider .carousel-caption {
+      top: 5%;
+    }
+  
+    #mainSlider .carousel-caption h2 {
+      font-size: 18px;
+      margin-bottom: 40px;
+    }
+  
+    #mainSlider .carousel-caption p {
+      display: none;
+    }
+  
+    .carousel-caption .main-btn {
+      
+      font-size: 14px;
+    }
+  
+    /* about */
+    .main-title {
+      font-size: 30px;
+    }
+  
+    #about-area img {
+      margin-top: 0;
+      margin-bottom: 30px;
+    }
+  
+    /* contact */
+    .contact-box {
+      border: none;
+      margin-bottom: 0;
+    }
+  
+    /* serviços*/
+    .row-cols-auto h4{
+        font-size: 20px;
+    }
+    
+    .container{
+        padding-left: 15px;
+    }
+
+    .container p {
+        font-size: 18px;
+    }
+
+    .col img {
+        height: 32%;
+    }
+
+    .col i {
+        font-size: 60px;
+    }
+    
+    .lista2 li{
+        font-size: 17px;
+    }
+
+    #icones3 p {
+        font-size: 17px;
+    }
+
+    .lista li {
+        font-size: 18px;
+        padding-right: 10px;
+    }
+
+    .lista3 li{
+        font-size: 17px;
+    }
+
+    .servavançado img{
+        display: none;
+    }
+
+    .fasobre img{
+        display: none;
+    }
+
+    .verifield img{
+        display: none;
+    }
+
+    .sms img {
+        display: none;
+    }
+
+   
+  }

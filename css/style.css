@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+body {
+    font-family: 'inter', sans-serif;
+    background-color: #fff;
+    color: #444;
+    transition: 0.5s;
+   
+}
+
+a {
+    text-decoration: none;
+    color: #2aade5;
+}
+
+button a {
+    color: #fff;
+}
+.container  {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 3rem;
+    margin-top: 25px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.212);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+.container img {
+    width: 135px;
+}
+
+.container input {
+    outline: 1px solid #2aade5;
+   
+}
+.container select {
+    outline: 1px solid #2aade5;
+}
+
+.input-group {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#login {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.input-box input{
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: left;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+.customh6 h6 {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: left;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px
+
+}
+
+.custom-select {
+    border-radius: 15px;
+    border: none;
+    width: 270px;
+    height: 40px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+}
+
+.entrar button {
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color:  #2aade5;
+    color: #fff; 
+    
+}
+
+.entra {
+    position: relative;
+}
+
+.entrar button:hover {
+    background-color: #00bce5;
+}
+
+input::placeholder {
+    color: #b6b6b6;
+}
+
+input:focus {
+    outline: none;
+}
+
+.input-login input {
+    border-radius: 15px;
+    border: none;
+    width: 250px;
+    height: 40px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.input-login label {
+    font-size: 0.90rem;
+    font-weight: 600;
+    text-align: left;
+    justify-content: left;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+
+.span-required {
+    display: none;
+}
+
+
+
+/*RESPONSIVIDADE*/
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Tamanho da fonte menor para dispositivos móveis */
+    }
+
+    /* Redimensione o formulário para se ajustar à largura da tela */
+    #login {
+        width: 90%;
+        margin: 0 auto; /* Centraliza o formulário */
+    }
+
+    /* Estilos específicos para elementos em telas menores */
+    .input-box {
+        width: 100%; /* Largura total para campos de entrada */
+    }
+}
+
+/* Estilos para telas maiores (como desktops) */
+@media (min-width: 768px) {
+    body {
+        font-size: 16px; /* Tamanho da fonte padrão para telas maiores */
+    }
+}
+/* ajustar pra ficar duas colunas quando diminui a tela*/
+@media (max-width:1600px) {
+    .container{
+        width:43%;
+    }
+} 
+
+
+/* Estilos adicionais específicos para dispositivos móveis podem ser adicionados aqui */
+
+@media (max-width:1200px) {
+    .container{
+        width:250px;
+    }
+} 
+/*estilo da notificação ao apertar os botoes*/
+.notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00bce5;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+/*estilo do carregamento ao apertar o botao entrar na tela de login*/
+.spinner {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    border: 4.5px solid #0000;
+    border-radius: 50%;
+    border-color: #dbdcef #0000;
+    animation: spinner-e04l1k 1s infinite linear;
+    display: none;
+
+  }
+  
+  .spinner::before,
+  .spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+  }
+  
+  .spinner::before {
+    border-color: #00bce5 #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+  }
+  
+  .spinner::after {
+    margin: 8.9px;
+  }
+
+  .loading .spinner {
+    /* Mostre o spinner quando a classe 'loading' estiver presente no corpo do documento */
+    display: grid;
+  }
+
+  #spinner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+
+  @keyframes spinner-e04l1k {
+    100% {
+      transform: rotate(1turn);
+    }
+  }
